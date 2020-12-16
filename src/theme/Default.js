@@ -1,20 +1,20 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const palette = {
-  primary: "#7faae4",
-  secondary: "#834db7",
-  tertiary: "#34283f",
+  primary: '#7faae4',
+  secondary: '#834db7',
+  tertiary: '#34283f',
   grey: {
-    medium: "#acaaad",
-    light: "#d8d8d8",
+    medium: '#acaaad',
+    light: '#d8d8d8',
   },
 };
 
 const textSize = {
-  h1: "2.4rem",
-  h2: "1.8rem",
-  h3: "1.4rem",
-  textBody: "1.6rem",
+  h1: '2.4rem',
+  h2: '1.8rem',
+  h3: '1.4rem',
+  textBody: '1.6rem',
 };
 
 const breakPoints = {
@@ -36,7 +36,7 @@ const theme = {
     maxWidth: 1024,
     bgColor: palette.grey.light,
   },
-  shadow: `0 2px 10px 3px rgba(0, 0, 0, 0.2)`,
+  shadow: '0 2px 10px 3px rgba(0, 0, 0, 0.2)',
 };
 
 export default theme;

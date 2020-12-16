@@ -1,22 +1,23 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
+import theme from 'theme/default';
 
 const Wrapper = styled.div`
-  max-width: ${({ theme }) => theme.page.maxWidth}px;
+  max-width: ${theme.page.maxWidth}px;
   margin: auto;
   min-height: 100%;
-  padding: 0 ${({ theme }) => theme.spacer * 2}px;
+  padding: 0 ${theme.spacer * 2}px;
 `;
 
 const OneCol = ({ className, children }) => {
-  const classes = ["OneCol"];
+  const classes = ['OneCol'];
   if (className) classes.push(className);
 
-  return <Wrapper className={classes.join(" ")}>{children}</Wrapper>;
+  return <Wrapper className={classes.join(' ')}>{children}</Wrapper>;
 };
 
-OneCol.displayName = "OneCol";
+OneCol.displayName = 'OneCol';
 
 OneCol.propTypes = {
   className: PropTypes.string,
@@ -30,5 +31,5 @@ OneCol.defaultProps = {
 export default OneCol;
 
 export const Row = styled.div`
-  margin-bottom: ${({ theme }) => theme.spacer * 4}px;
+  margin-bottom: ${theme.spacer * 4}px;
 `;

@@ -1,43 +1,39 @@
-import axios from "axios";
+/* eslint-disable no-unused-vars */
+import useSWR from 'swr'
+import queryString from 'query-string'
 
-const apiUrl = "https://www.omdbapi.com/?";
-const apikey = "2dba1a88";
+import endPoints from './endPoints'
+import { getter } from './tools'
 
-const cacheObj = {};
-
-export const search = (keyword) => {
-  const params = [`apikey=${apikey}`, `s=${keyword}`];
-  const endPoint = `${apiUrl}${params.join("&")}`;
-
-  if (cacheObj[keyword]) {
-    console.log("cached!");
-    return new Promise((resolve) => resolve(cacheObj[keyword]));
+const useGenericFetch = (endpoint, params, xhr = getter) => {
+  const swrOptions = {
+    revalidateOnFocus: false,
   }
+  const queryParams = queryString.stringifyUrl({
+    url: endpoint,
+    query: params,
+  })
 
-  return axios.get(endPoint).then((res) => {
-    const result = res.data.Search || [];
-    cacheObj[keyword] = result;
-    return result;
-  });
-};
+  const { data, error } = useSWR(
+    queryParams,
+    () => xhr(endpoint, params),
+    swrOptions
+  )
 
-export const getMovieByImdbID = (imdbID) => {
-  const params = [`apikey=${apikey}`, `i=${imdbID}`];
-  const endPoint = `${apiUrl}${params.join("&")}`;
+  return { result: data, error }
+}
 
-  if (cacheObj[imdbID]) {
-    console.log("cached!");
-    return new Promise((resolve) => resolve(cacheObj[imdbID]));
-  }
+// eslint-disable-next-line import/prefer-default-export
+export const useUsers = () =>
+  // TODO: use real APIs rather than mocked data
+  // useGenericFetch(endPoints.users)
 
-  return axios.get(endPoint).then((res) => {
-    cacheObj[imdbID] = res.data;
-    return res.data;
-  });
-};
-
-export const fullSearch = (keyword) => {
-  return search(keyword).then((res) =>
-    Promise.all(res.map((movie) => getMovieByImdbID(movie.imdbID)))
-  );
-};
+  [
+    {
+      user: {
+        name: 'John',
+        id: 'a01',
+        age: 35,
+      },
+    },
+  ]

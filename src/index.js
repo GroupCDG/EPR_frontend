@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import CssBaseline from "theme/Baseline";
 import { ThemeProvider } from "styled-components";
-import defaultTheme, { Typography } from "theme/Default";
+import defaultTheme, { Typography } from "theme/default";
 import App from "./App";
 
 ReactDOM.render(

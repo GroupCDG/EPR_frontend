@@ -1,6 +1,6 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
-import defaultTheme, { Typography } from "theme/Default";
+import defaultTheme, { Typography } from "theme/default";
 import CssBaseline from "theme/Baseline";
 import { render as rtlRender } from "@testing-library/react";
 import rtRenderer from "react-test-renderer";

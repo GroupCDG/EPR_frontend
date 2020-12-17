@@ -1,7 +1,7 @@
-import React from "react";
-import { createGlobalStyle } from "styled-components";
-import "normalize.css";
-import PropTypes from "prop-types";
+import React from 'react';
+import { createGlobalStyle } from 'styled-components';
+import 'normalize.css';
+import PropTypes from 'prop-types';
 
 const CssBaseline = createGlobalStyle`
   html,
@@ -23,18 +23,16 @@ const CssBaseline = createGlobalStyle`
   }
 
 `;
-const BaseLine = ({ Typography }) => {
-  return (
-    <>
-      <CssBaseline />
-      <Typography />
-    </>
-  );
-};
+const BaseLine = ({ Typography }) => (
+  <>
+    <CssBaseline />
+    <Typography />
+  </>
+);
 
 BaseLine.propTypes = {
   Typography: PropTypes.shape({}).isRequired,
 };
 
-BaseLine.displayName = "Baseline";
+BaseLine.displayName = 'Baseline';
 export default BaseLine;

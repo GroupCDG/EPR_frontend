@@ -1,9 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import CssBaseline from "theme/Baseline";
-import { ThemeProvider } from "styled-components";
-import defaultTheme, { Typography } from "theme/Default";
-import App from "./App";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import CssBaseline from 'theme/Baseline';
+import { ThemeProvider } from 'styled-components';
+import defaultTheme, { Typography } from 'theme/Default';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,5 +12,5 @@ ReactDOM.render(
       <App />
     </ThemeProvider>
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root'),
 );

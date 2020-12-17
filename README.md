@@ -4,6 +4,9 @@ Base app for starting a React project using:
 
 - Styled-components
 - normalize.css
+- proptypes
+- react router
+- hookstate
 - axios
 - eslint Airbnb settings
 - prettier

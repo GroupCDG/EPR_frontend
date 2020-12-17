@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
   max-width: ${({ theme }) => theme.page.maxWidth}px;
@@ -10,13 +10,13 @@ const Wrapper = styled.div`
 `;
 
 const OneCol = ({ className, children }) => {
-  const classes = ["OneCol"];
+  const classes = ['OneCol'];
   if (className) classes.push(className);
 
-  return <Wrapper className={classes.join(" ")}>{children}</Wrapper>;
+  return <Wrapper className={classes.join(' ')}>{children}</Wrapper>;
 };
 
-OneCol.displayName = "OneCol";
+OneCol.displayName = 'OneCol';
 
 OneCol.propTypes = {
   className: PropTypes.string,

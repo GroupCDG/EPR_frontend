@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import OneCol, { Row } from 'layouts/OneCol';
 import User from 'components/views/User';
 import Todo from 'components/views/Todo';
+import UserList from 'components/views/UserList';
 
 import globalState from 'globalState';
 import { useState as useGlobalState } from '@hookstate/core';
@@ -26,14 +27,13 @@ const Home = ({ className }) => {
     };
   }, [state.user]);
 
-  console.log('home');
-
   return (
     <Wrapper className={classes.join(' ')}>
       <OneCol>
         <Row>Some nice content here</Row>
         <Row>
           <User />
+          <UserList />
           <Todo />
         </Row>
       </OneCol>

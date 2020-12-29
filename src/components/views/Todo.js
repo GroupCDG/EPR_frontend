@@ -15,8 +15,6 @@ const Component = () => {
   const state = useGlobalState(globalState);
   const todos = state.todo.get();
 
-  console.log('todo');
-
   React.useEffect(() => {
     const hnd = setInterval(() => {
       state.todo.merge([{ name: (Math.random() * 10).toFixed(2) }]);

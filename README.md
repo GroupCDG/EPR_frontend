@@ -11,6 +11,7 @@ Base app for starting a React project using:
 - eslint Airbnb settings
 - prettier
 - storybook
+- SWR
 
 It also creates the base folder structure and theme context
 

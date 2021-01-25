@@ -1,8 +1,8 @@
-import { createState } from '@hookstate/core';
+import { createState, useState as useGlobalState } from '@hookstate/core';
 
 const initialState = {
-  user: undefined,
-  todo: [],
+  // set here the initial values
 };
 const globalState = createState(initialState);
-export default globalState;
+
+export default () => useGlobalState(globalState);

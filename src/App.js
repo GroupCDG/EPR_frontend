@@ -1,17 +1,19 @@
-import React from 'react';
-import Home from 'pages/Home';
-import NotFound from 'pages/NotFound';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React from 'react'
+import { routes, OnRoute } from 'router'
+
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
     <Router>
+      <OnRoute />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<NotFound />} />
+        {routes.map(([path, Value]) => (
+          <Route key={path} path={path} element={<Value />} />
+        ))}
       </Routes>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import theme from 'theme/default';
 
 const Wrapper = styled.div`
-  max-width: ${({ theme }) => theme.page.maxWidth}px;
+  max-width: ${theme.page.maxWidth}px;
   margin: auto;
   min-height: 100%;
-  padding: 0 ${({ theme }) => theme.spacer * 2}px;
+  padding: 0 ${theme.spacer * 2}px;
 `;
 
 const OneCol = ({ className, children }) => {
@@ -30,5 +31,5 @@ OneCol.defaultProps = {
 export default OneCol;
 
 export const Row = styled.div`
-  margin-bottom: ${({ theme }) => theme.spacer * 4}px;
+  margin-bottom: ${theme.spacer * 4}px;
 `;

@@ -8,7 +8,6 @@ const Wrapper = styled.div`
   margin: auto;
   min-height: 100%;
   padding: 0 ${theme.spacer * 2}px;
-
 `
 
 const OneCol = ({ className, children }) => {

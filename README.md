@@ -13,6 +13,7 @@ Base app for starting a React project using:
 - storybook
 - SWR
 
+
 It also creates the base folder structure
 
 The theme is exported as an object rather than using the ThemeContext.

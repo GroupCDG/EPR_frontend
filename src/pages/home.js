@@ -21,7 +21,6 @@ const Home = ({ className }) => {
   return (
     <Wrapper className={classes.join(' ')}>
       <OneCol>
-
         <Row>
           <h1>Community Eycare</h1>
           <Paper>

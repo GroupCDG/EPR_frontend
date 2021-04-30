@@ -1,9 +1,9 @@
-import React from 'react';
-import { ThemeProvider } from 'styled-components';
-import defaultTheme, { Typography } from 'theme/default';
-import CssBaseline from 'theme/Baseline';
-import { render as rtlRender } from '@testing-library/react';
-import rtRenderer from 'react-test-renderer';
+import React from 'react'
+import { ThemeProvider } from 'styled-components'
+import defaultTheme, { Typography } from 'theme/default'
+import CssBaseline from 'theme/baseline'
+import { render as rtlRender } from '@testing-library/react'
+import rtRenderer from 'react-test-renderer'
 
 export function tlRender(ui) {
   const App = () => (
@@ -12,8 +12,8 @@ export function tlRender(ui) {
       <Typography />
       {ui}
     </ThemeProvider>
-  );
-  return rtlRender(<App />);
+  )
+  return rtlRender(<App />)
 }
 
 export function tRender(ui) {
@@ -23,6 +23,5 @@ export function tRender(ui) {
       <Typography />
       {ui}
     </ThemeProvider>
-  );
-  return rtRenderer(<App />);
-}
+  )
+  return rtRenderer(<App />)

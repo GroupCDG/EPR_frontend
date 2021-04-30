@@ -4,7 +4,6 @@ import CssBaseline from 'theme/baseline'
 import { Typography } from 'theme/default'
 import App from './App'
 
-
 ReactDOM.render(
   <React.StrictMode>
     <CssBaseline Typography={Typography} />

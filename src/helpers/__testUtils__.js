@@ -25,4 +25,3 @@ export function tRender(ui) {
     </ThemeProvider>
   )
   return rtRenderer(<App />)
-}

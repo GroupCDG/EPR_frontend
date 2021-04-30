@@ -1,3 +1,4 @@
+
 import { createGlobalStyle } from 'styled-components'
 
 const palette = {
@@ -16,6 +17,7 @@ const palette = {
     medium: '#DEE5E8',
     light: '#EBEBEB',
     lighter: '#F0F3F4',
+
   },
   white: '#fff',
 }
@@ -26,6 +28,7 @@ const textSize = {
   h3: '2rem',
   textBody: '1.6rem',
 }
+
 
 const breakPoints = {
   small: 390,
@@ -56,6 +59,7 @@ const theme = {
   shadow: 'box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2)',
   largeShadow: 'box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1)',
 }
+
 
 export default theme
 

@@ -5,6 +5,10 @@ import OneCol, { Row } from 'layouts/OneCol'
 
 import useGlobalState from 'globalState'
 
+import Button from 'components/base/button'
+import Paper from 'components/base/paper'
+import { ReactComponent as Icon } from 'assets/icons/right_arrow.svg'
+
 const Wrapper = styled.div``
 
 const Home = ({ className }) => {
@@ -17,7 +21,16 @@ const Home = ({ className }) => {
   return (
     <Wrapper className={classes.join(' ')}>
       <OneCol>
-        <Row>Some nice content here</Row>
+
+        <Row>
+          <h1>Community Eycare</h1>
+          <Paper>
+            <Button>
+              Alessio <Icon />
+            </Button>
+            <Button secondary>Alessio</Button>
+          </Paper>
+        </Row>
         <Row>{name}</Row>
       </OneCol>
     </Wrapper>

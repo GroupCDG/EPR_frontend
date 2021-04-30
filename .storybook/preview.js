@@ -1,24 +1,17 @@
-import React from 'react';
-import { addDecorator } from '@storybook/react';
-import CssBaseline from '../src/theme/Baseline';
-import { ThemeProvider } from 'styled-components';
-import theme, { Typography } from '../src/theme/default';
-// import { useForm, FormProvider } from "react-hook-form";
+import React from 'react'
+import { addDecorator } from '@storybook/react'
+import CssBaseline from '../src/theme/baseline'
+import { Typography } from '../src/theme/default'
 
 addDecorator((storyFn) => {
-  // const methods = useForm();
   return (
     <>
       <CssBaseline Typography={Typography} />
-      <ThemeProvider theme={theme}>
-        {/* <FormProvider {...methods}> */}
-        {storyFn()}
-        {/* </FormProvider> */}
-      </ThemeProvider>
+      {storyFn()}
     </>
-  );
-});
+  )
+})
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
-};
+}

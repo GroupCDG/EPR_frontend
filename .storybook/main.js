@@ -13,6 +13,7 @@ module.exports = {
 
     // Make whatever fine-grained changes you need
     config.module.rules.push({
+      test: /\.js$/,
       include: path.resolve(__dirname, '../src'),
     })
 

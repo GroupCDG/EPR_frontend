@@ -19,6 +19,8 @@ It also creates the base folder structure
 
 The theme is exported as an object rather than using the ThemeContext.
 
+### For this project Storybook is published here: https://groupcdg.github.io/EPR_frontend/?path=/story/base-button--button
+
 ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

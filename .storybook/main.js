@@ -13,7 +13,7 @@ module.exports = {
 
     // Make whatever fine-grained changes you need
     config.module.rules.push({
-      include: path.resolve(__dirname, '../'),
+      include: path.resolve(__dirname, '../src'),
     })
 
     // Return the altered config

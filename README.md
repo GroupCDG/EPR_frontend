@@ -7,6 +7,7 @@ Base app for starting a React project using:
 - proptypes
 - react router
 - hookstate
+- react-spring
 - axios
 - eslint Airbnb settings
 - prettier

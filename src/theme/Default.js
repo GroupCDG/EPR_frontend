@@ -12,7 +12,7 @@ const palette = {
   },
   grey: {
     darker: '#444444',
-    dark: '#99999',
+    dark: '#999999',
     medium: '#DEE5E8',
     light: '#EBEBEB',
     lighter: '#F0F3F4',

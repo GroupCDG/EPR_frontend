@@ -1,7 +1,7 @@
 import React from 'react'
 import { addDecorator } from '@storybook/react'
-import CssBaseline from 'theme/baseline'
-import { Typography } from 'theme/default'
+import CssBaseline from '../src/theme/baseline'
+import { Typography } from '../src/theme/default'
 
 addDecorator((storyFn) => {
   return (

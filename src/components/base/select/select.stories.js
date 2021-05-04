@@ -1,5 +1,5 @@
 import React from 'react'
-import SelectComponent, { components } from 'react-select'
+import SelectComponent from './Select'
 
 const options = [
   { value: 'chocolate', label: 'Chocolate' },
@@ -63,24 +63,9 @@ export default {
   },
 }
 
-const style = {
-  color: 'red',
-}
-
 const Select = (args) => (
   <>
-    <SelectComponent
-      {...args}
-      components={{
-        // eslint-disable-next-line react/prop-types
-        ValueContainer: ({ children, ...rest }) => (
-          <components.ValueContainer {...rest} styles={style}>
-            {children}
-          </components.ValueContainer>
-        ),
-      }}
-      options={options}
-    />
+    <SelectComponent {...args} options={options} />
     <p style={{ marginTop: '30px' }}>
       For this component we are using &nbsp;
       <a href="https://www.npmjs.com/package/react-select">React Select</a>

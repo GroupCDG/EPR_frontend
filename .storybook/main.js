@@ -17,8 +17,8 @@ module.exports = {
     //   include: path.resolve(__dirname, '../src'),
     // })
 
-    console.log(config)
     config.resolve.modules.push(path.resolve('../src'))
+    console.log(config)
 
     // Return the altered config
     return config

@@ -12,10 +12,13 @@ module.exports = {
     // 'PRODUCTION' is used when building the static version of storybook.
 
     // Make whatever fine-grained changes you need
-    config.module.rules.push({
-      test: /\.js$/,
-      include: path.resolve(__dirname, '../src'),
-    })
+    // config.module.rules.push({
+    //   test: /\.js$/,
+    //   include: path.resolve(__dirname, '../src'),
+    // })
+
+    console.log(config)
+    config.resolve.modules.push(path.resolve('../src'))
 
     // Return the altered config
     return config

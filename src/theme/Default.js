@@ -5,6 +5,7 @@ const palette = {
     dark: '#685F9B',
     medium: '#8B83BA',
     light: '#D9D5EC',
+    lighter: '#f6fbff',
   },
   orange: {
     medium: '#E58A00',
@@ -66,6 +67,7 @@ export const Typography = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     font-size: ${textSize.textBody};
     background: ${theme.page.bgColor};
+    color: ${theme.colorCodes.primary};
   }
 
   h1 {

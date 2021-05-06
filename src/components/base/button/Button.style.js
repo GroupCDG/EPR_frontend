@@ -35,6 +35,22 @@ const ButtonSC = styled.button`
   ${({ variation }) =>
     variation === 'tertiary' &&
     css`
+      background-color: ${theme.palette.grey.medium};
+      color: ${theme.palette.violet.dark};
+      border: 1px solid transparent;
+      ${theme.shadow};
+      font-size: 1.4rem;
+      font-weight: 600;
+      &:hover {
+        opacity: 1;
+        background-color: ${theme.palette.violet.light}11;
+      }
+    `}
+
+
+  ${({ variation }) =>
+    variation === 'barebone' &&
+    css`
       background-color: transparent;
       color: ${theme.palette.violet.medium};
       box-shadow: none;

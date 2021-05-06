@@ -25,6 +25,7 @@ const CssBaseline = createGlobalStyle`
   svg {
     width: 1em;
     height: 1em;
+    display: block;
   }
 
 `

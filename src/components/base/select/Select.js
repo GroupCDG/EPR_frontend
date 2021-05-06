@@ -11,12 +11,9 @@ const SelectSC = styled(SelectComponent)`
   }
 
   .epr__control {
-    min-height: auto;
+    min-height: 41px; // magic number, sorry :)
   }
 
-  .epr__value-container {
-    padding: ${theme.spacer}px;
-  }
   .epr__control--is-focused,
   .epr__control:hover {
     border-color: ${theme.colorCodes.primary};

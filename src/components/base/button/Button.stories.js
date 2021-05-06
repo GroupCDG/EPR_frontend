@@ -26,7 +26,7 @@ export default {
     },
     variation: {
       defaultValue: 'primary',
-      options: ['primary', 'secondary', 'tertiary'],
+      options: ['primary', 'secondary', 'tertiary', 'barebone'],
       control: {
         type: 'radio',
       },

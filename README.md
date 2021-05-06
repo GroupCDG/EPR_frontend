@@ -19,7 +19,8 @@ It also creates the base folder structure
 
 The theme is exported as an object rather than using the ThemeContext.
 
-### For this project Storybook is published here: https://groupcdg.github.io/EPR_frontend/?path=/story/base-button--button
+### Storybook:
+The components library is published here: https://groupcdg.github.io/EPR_frontend/?path=/story/base-button--button
 
 ---
 

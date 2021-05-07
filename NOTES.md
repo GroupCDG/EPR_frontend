@@ -49,7 +49,7 @@ Clicking on **Book initial appointment** should "lock" the patient so to avoid a
 ### Choosing a Time and Location
 To select the time and location for an appointment we could decide to sort the available options by space or time.
 
-The first tab sorts them by space, showing the closest clinics that provide the service the patient needs while the second tab gives time priority showing the next available slots first.
+The first tab sorts them by space, showing the closest clinics that provide the service required while the second tab gives time priority showing the next available slots first.
 
 
-> Showing only the Locations offering the required service
+> Show only the Locations offering the required service

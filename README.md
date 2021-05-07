@@ -12,6 +12,7 @@ To build and publish:
 
 ### 🎨 Designs:
 
+Figma file: https://github.com/GroupCDG/EPR_frontend/blob/master/designs/EPR.fig
 Figma link: https://www.figma.com/file/ogQV8Y8V6fbHafhS88D75A/NHS?node-id=0%3A1  
 Icon set: https://www.figma.com/file/LUtprtXqZwTBPGyCkEhByX/coolicons-Free-Iconset-Community?node-id=0%3A1
 

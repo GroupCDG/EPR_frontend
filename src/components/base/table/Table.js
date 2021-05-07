@@ -10,17 +10,19 @@ const Table = ({ className, head, body }) => {
     <WrapperSt className={classes.join(' ')}>
       <THeadSt>
         <tr>
-          {head.map((value, index) => {
-            const key = Date.now() + index
-            return (
-              <th key={key}>
-                {typeof value === 'object' ? (
-                  value
-                ) : (
-                  <span className="defaultTH">{value}</span>
-                )}
-              </th>
-            )
+          {head.map((item, index) => {
+            const dummyKey = Date.now() + index
+
+            const element =
+              typeof item === 'object' ? (
+                <th key={item.key}>{item.value}</th>
+              ) : (
+                <th key={dummyKey}>
+                  <span className="defaultTH">{item}</span>
+                </th>
+              )
+
+            return element
           })}
         </tr>
       </THeadSt>

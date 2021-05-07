@@ -64,28 +64,31 @@ const SortableTable = ({
       const cName = ['sortableTH']
       cName.push(cellClassMap.get(value.ascending))
 
-      return (
-        <span className={cName.join(' ')}>
-          {value.ascending !== undefined && (
+      return {
+        key: value,
+        value: (
+          <span className={cName.join(' ')}>
+            {value.ascending !== undefined && (
+              <button
+                type="button"
+                className="removeOrder"
+                onClick={removeOrderBy(id)}
+              >
+                <CloseIcon />
+              </button>
+            )}
+
             <button
               type="button"
-              className="removeOrder"
-              onClick={removeOrderBy(id)}
+              className="colHeading"
+              onClick={handleHeadClick({ id, value })}
             >
-              <CloseIcon />
+              {headerMap[value.id]}
+              {value.ascending !== undefined && <DescendingIcon />}
             </button>
-          )}
-
-          <button
-            type="button"
-            className="colHeading"
-            onClick={handleHeadClick({ id, value })}
-          >
-            {headerMap[value.id]}
-            {value.ascending !== undefined && <DescendingIcon />}
-          </button>
-        </span>
-      )
+          </span>
+        ),
+      }
     })
   }, [colsMap, headerMap, orderBy, onSort])
 

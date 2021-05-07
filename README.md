@@ -22,6 +22,13 @@ The theme is exported as an object rather than using the ThemeContext.
 ### Storybook:
 The components library is published here: https://groupcdg.github.io/EPR_frontend/?path=/story/base-button--button
 
+To build and publish:
+- npm run predeploy
+- npm run deploy-storybook
+
+### Designs:
+Figma link: https://www.figma.com/file/ogQV8Y8V6fbHafhS88D75A/NHS?node-id=0%3A1
+Icon set: https://www.figma.com/file/LUtprtXqZwTBPGyCkEhByX/coolicons-Free-Iconset-Community?node-id=0%3A1
 ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

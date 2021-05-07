@@ -1,6 +1,9 @@
-# React starter
+# EPR
 
-Base app for starting a React project using:
+**Project notes** avilable here: https://github.com/GroupCDG/EPR_frontend/blob/master/NOTES.md
+
+
+This is a Base app for starting a React project using:
 
 - Styled-components
 - normalize.css

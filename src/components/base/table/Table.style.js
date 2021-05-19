@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import theme from 'theme/default'
+import theme from 'theme/Default'
 
 const WrapperSt = styled.table`
   background-color: ${theme.palette.grey.lighter};

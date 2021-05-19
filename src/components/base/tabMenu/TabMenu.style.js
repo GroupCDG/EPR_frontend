@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import theme from 'theme/default'
+import theme from 'theme/Default'
 
 const WrapperSt = styled.div`
   filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.1));

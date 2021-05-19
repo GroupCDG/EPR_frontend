@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import theme from 'theme/default'
+import theme from 'theme/Default'
 
 const PaperSC = styled.div`
   border-radius: ${theme.radius}px;

@@ -1,6 +1,6 @@
 import React from 'react'
 import SelectComponent from 'react-select'
-import theme from 'theme/default'
+import theme from 'theme/Default'
 import styled from 'styled-components'
 
 const SelectSC = styled(SelectComponent)`
